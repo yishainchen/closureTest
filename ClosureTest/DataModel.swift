@@ -9,8 +9,14 @@
 
 import Foundation
 
+protocol DataModelDelegate: class {
+    func didRecieveDataUpdate(data: String)
+}
+
 
 class DataModel {
+    
+    weak var delegate: DataModelDelegate?
     
     //Callback as Completion Handler
     func requestData(completion: ((_ data: String) -> Void)) {
@@ -27,5 +33,21 @@ class DataModel {
         let data = "test2"
         
         onDataUpdate?(data)
+        
+    }
+    
+    
+    func requestDataDelegate() {
+        // the data was received and parsed to String
+        let data = "hihihihihiihi"
+        delegate?.didRecieveDataUpdate(data: data)
     }
 }
+
+
+
+
+
+
+
+

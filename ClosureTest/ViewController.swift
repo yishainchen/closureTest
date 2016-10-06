@@ -6,9 +6,15 @@
 //  Copyright © 2016年 yishainChen. All rights reserved.
 //
 
+extension ViewController: DataModelDelegate {
+    func didRecieveDataUpdate(data: String) {
+        print(data)
+    }
+}
+
 import UIKit
 
-class ViewController: UIViewController ,MyProtocol{
+class ViewController: UIViewController ,MyProtocol {
 
     @IBOutlet weak var myText: UILabel!
     
@@ -17,18 +23,21 @@ class ViewController: UIViewController ,MyProtocol{
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        dataModel.delegate = self
+        dataModel.requestDataDelegate()
+        
         //Callback as a class property
-        dataModel.onDataUpdate = { [weak self] (data: String) in
-            self?.useData(data: data)
-        }
-        dataModel.dataRequest()
+//        dataModel.onDataUpdate = { [weak self] (data: String) in
+//            self?.useData(data: data)
+//        }
+//        dataModel.dataRequest()
         
         
         
         //Callback as Completion Handler
-        dataModel.requestData { [weak self] (data: String) in
-            self?.useData(data: data)
-        }
+//        dataModel.requestData { [weak self] (data: String) in
+//            self?.useData(data: data)
+//        }
 
     }
     

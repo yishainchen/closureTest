@@ -39,15 +39,16 @@ class ViewController: UIViewController  {
         
         
         
-        //Callback as Completion Handler
-//        dataModel.requestData { [weak self] (data: String) in
-//            self?.useData(data: data)
-//        }
+//        Callback as Completion Handler
+        dataModel.requestData { [weak self] (data: String) in
+            self?.useData(data: data)
+        }
 
     }
     
     private func useData(data: String) {
         print(data)
+        myText.text = data
     }
 
     override func didReceiveMemoryWarning() {
@@ -57,6 +58,7 @@ class ViewController: UIViewController  {
     
     func methodOfReceivedNotification (){
         print("notification success")
+        myText.text = "notification success"
         
     }
   

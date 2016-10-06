@@ -43,43 +43,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1980" y="138.98050974512745"/>
-        </scene>
-        <!--Previous View Controller-->
-        <scene sceneID="TFc-Uy-66O">
-            <objects>
-                <viewController id="Xc1-4Z-RSZ" customClass="PreviousViewController" customModule="ClosureTest" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="pLa-hj-rXa"/>
-                        <viewControllerLayoutGuide type="bottom" id="cWF-1y-bUd"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Z4K-gJ-EbX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yeb-tt-N1i">
-                                <frame key="frameInset" minX="174" minY="462" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="E1H-Ls-ud0"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkA-eV-fKG">
-                                <frame key="frameInset" minX="137" minY="197" width="143" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="SRM-Eu-ufr"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="iv4-Zt-agB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1231.2" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1868" y="139"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="P3D-7I-ocD">
@@ -111,12 +75,12 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Xc1-4Z-RSZ" kind="relationship" relationship="rootViewController" id="O16-FS-PqB"/>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ZFo-Vk-9ON"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wFj-af-ho0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="138.98050974512745"/>
+            <point key="canvasLocation" x="1063" y="139"/>
         </scene>
     </scenes>
 </document>

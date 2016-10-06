@@ -14,13 +14,18 @@ extension ViewController: DataModelDelegate {
 
 import UIKit
 
-class ViewController: UIViewController ,MyProtocol {
+class ViewController: UIViewController  {
 
+    
+    let notificationName = Notification.Name("NotificationIdentifier")
     @IBOutlet weak var myText: UILabel!
     
     private let dataModel = DataModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(self.methodOfReceivedNotification), name: notificationName, object: nil)
+        
         // Do any additional setup after loading the view, typically from a nib.
         
         dataModel.delegate = self
@@ -50,19 +55,10 @@ class ViewController: UIViewController ,MyProtocol {
         // Dispose of any resources that can be recreated.
     }
     
-    func sendArrayToPreviousVC(myArray:[AnyObject]) {
-        //DO YOUR THING
-        print (myArray)
-        self.myText.text = myArray[0] as? String
-    }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let friendViewController = (segue.destination as! SecondViewController)
-        friendViewController.mDelegate = self
-    }
-    
-   
+    func methodOfReceivedNotification (){
+        print("notification success")
         
+    }
   
 
 }

@@ -8,38 +8,15 @@
 
 import UIKit
 
-protocol MyProtocol: class
-{
-    func sendArrayToPreviousVC(myArray:[AnyObject])
-}
-
-protocol CastHandlerDelegate: class {
-    
-    /// Media Launched successfully on the cast device
-    func launchObjectSuccess()
-    
-}
-
 class SecondViewController: UIViewController {
-
-    weak var mDelegate:MyProtocol?
-    weak var delegate: CastHandlerDelegate?
-    var myarray: NSArray?
     
     let notificationName = Notification.Name("NotificationIdentifier")
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        myarray = ["123","456"]
-        
-        print(myarray)
         // Post notification
         NotificationCenter.default.post(name: notificationName, object: nil)
         
-        delegate?.launchObjectSuccess()
-        mDelegate?.sendArrayToPreviousVC(myArray: myarray! as [AnyObject])
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {

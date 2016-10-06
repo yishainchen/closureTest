@@ -13,7 +13,6 @@
 		70855BF61DA4A9E80020005F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70855BF51DA4A9E80020005F /* Assets.xcassets */; };
 		70855BF91DA4A9E80020005F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70855BF71DA4A9E80020005F /* LaunchScreen.storyboard */; };
 		70855C011DA4AA340020005F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70855C001DA4AA340020005F /* SecondViewController.swift */; };
-		70855C031DA4D6840020005F /* PreviousViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70855C021DA4D6840020005F /* PreviousViewController.swift */; };
 		70855C071DA5F6B80020005F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70855C061DA5F6B80020005F /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		70855BF81DA4A9E80020005F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70855BFA1DA4A9E80020005F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70855C001DA4AA340020005F /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
-		70855C021DA4D6840020005F /* PreviousViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviousViewController.swift; sourceTree = "<group>"; };
 		70855C061DA5F6B80020005F /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -64,7 +62,6 @@
 				70855C061DA5F6B80020005F /* DataModel.swift */,
 				70855BF01DA4A9E80020005F /* ViewController.swift */,
 				70855C001DA4AA340020005F /* SecondViewController.swift */,
-				70855C021DA4D6840020005F /* PreviousViewController.swift */,
 				70855BF21DA4A9E80020005F /* Main.storyboard */,
 				70855BF51DA4A9E80020005F /* Assets.xcassets */,
 				70855BF71DA4A9E80020005F /* LaunchScreen.storyboard */,
@@ -150,7 +147,6 @@
 				70855C011DA4AA340020005F /* SecondViewController.swift in Sources */,
 				70855BF11DA4A9E80020005F /* ViewController.swift in Sources */,
 				70855BEF1DA4A9E80020005F /* AppDelegate.swift in Sources */,
-				70855C031DA4D6840020005F /* PreviousViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
